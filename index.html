@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Oak by Crushberry | A Refined Lifestyle Destination</title>
+  <meta name="description" content="Luxury apartments, refined dining, wellness cuisine, and private spa – all in one place at Black Oak by Crushberry.">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Black Oak by Crushberry | A Refined Lifestyle Destination">
+  <meta property="og:description" content="Luxury apartments, refined dining, wellness cuisine, and private spa – all in one place.">
+  <meta property="og:image" content="assets/hero-bg.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Preloader Screen -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <svg class="preloader-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 15 C45 25 35 25 30 35 C25 45 35 48 30 58 C25 68 35 70 38 80 L62 80 C65 70 75 68 70 58 C65 48 75 45 70 35 C65 25 55 25 50 15 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-miterlimit="10"/>
+        <path d="M50 30 L50 80" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M50 45 C45 42 40 42 37 45" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 C42 50 36 55 33 60" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M50 40 C55 37 60 37 63 40" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M50 50 C58 45 64 50 67 55" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M50 63 C44 60 39 63 36 67" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M50 67 C56 64 61 67 64 71" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <h1 class="preloader-title">BLACK OAK</h1>
+      <div class="preloader-line-container">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#" class="logo-link">
+        <div class="logo-wrapper">
+          <!-- Tree SVG Logo -->
+          <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 15 C45 25 35 25 30 35 C25 45 35 48 30 58 C25 68 35 70 38 80 L62 80 C65 70 75 68 70 58 C65 48 75 45 70 35 C65 25 55 25 50 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-miterlimit="10"/>
+            <path d="M50 30 L50 80" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M50 45 C45 42 40 42 37 45" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 55 C42 50 36 55 33 60" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 40 C55 37 60 37 63 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 50 C58 45 64 50 67 55" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 63 C44 60 39 63 36 67" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 67 C56 64 61 67 64 71" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">BLACK OAK</span>
+            <span class="logo-subtitle">BY CRUSHBERRY</span>
+            <span class="logo-tag">FINE DINING • WELLNESS CUISINE</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link active">HOME</a>
+        <a href="#stay" class="nav-link">STAY</a>
+        <a href="#dine" class="nav-link">DINE</a>
+        <a href="#wellness" class="nav-link">WELLNESS</a>
+        <a href="#spa" class="nav-link">SPA</a>
+        <a href="#gallery" class="nav-link">GALLERY</a>
+        <a href="#footer" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button class="btn btn-accent btn-book-trigger">BOOK NOW</button>
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="#hero" class="mobile-link">HOME</a>
+      <a href="#stay" class="mobile-link">STAY</a>
+      <a href="#dine" class="mobile-link">DINE</a>
+      <a href="#wellness" class="mobile-link">WELLNESS</a>
+      <a href="#spa" class="mobile-link">SPA</a>
+      <a href="#gallery" class="mobile-link">GALLERY</a>
+      <a href="#footer" class="mobile-link">CONTACT</a>
+      <button class="btn btn-accent btn-book-trigger mobile-book-btn">BOOK NOW</button>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-container">
+        <img src="assets/hero-bg.png" alt="Black Oak Luxury Living Interior" class="hero-bg-image">
+      </div>
+      <div class="hero-overlay"></div>
+      
+      <div class="hero-content">
+        <span class="hero-tag scroll-reveal">LIVE. DINE. WELLNESS. REBOOT.</span>
+        <h1 class="hero-title scroll-reveal">A REFINED LIFESTYLE<br><span class="text-gold">DESTINATION</span></h1>
+        <p class="hero-desc scroll-reveal">Luxury apartments, refined dining, wellness cuisine and private spa – all in one place.</p>
+        <div class="hero-cta scroll-reveal">
+          <button class="btn btn-accent btn-book-trigger">BOOK YOUR STAY</button>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staggered Pillars Section -->
+    <section id="pillars" class="pillars-section">
+      
+      <!-- Pillar 1: Luxury Apartments (Stay) -->
+      <div id="stay" class="pillar-row scroll-reveal">
+        <div class="pillar-col pillar-text-col bg-dark-card">
+          <div class="pillar-content">
+            <div class="pillar-icon">
+              <!-- Bed Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7v11M21 7v11M3 14h18M3 9h18" />
+                <path d="M6 9v5M18 9v5" />
+                <path d="M3 18h18" />
+              </svg>
+            </div>
+            <h2 class="pillar-title">LUXURY APARTMENTS</h2>
+            <p class="pillar-desc">Elegant spaces designed for comfort, style and unforgettable stays.</p>
+            <button class="btn btn-link btn-book-trigger" data-service="stay">EXPLORE STAYS</button>
+          </div>
+        </div>
+        <div class="pillar-col pillar-image-col">
+          <div class="image-wrapper">
+            <img src="assets/pillar-apartment.png" alt="Black Oak Luxury Bedroom" class="pillar-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Fine Dining (Dine) -->
+      <div id="dine" class="pillar-row scroll-reveal">
+        <div class="pillar-col pillar-text-col bg-dark-card">
+          <div class="pillar-content">
+            <div class="pillar-icon">
+              <!-- Food Cover Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 19h18M12 4v3" />
+                <path d="M5 19c0-5 3-8 7-8s7 3 7 8" />
+                <circle cx="12" cy="4" r="1" />
+              </svg>
+            </div>
+            <h2 class="pillar-title">FINE DINING</h2>
+            <p class="pillar-desc">Exquisite flavors crafted by world-class chefs in an elegant setting.</p>
+            <button class="btn btn-link btn-book-trigger" data-service="dine">VIEW MENU</button>
+          </div>
+        </div>
+        <div class="pillar-col pillar-image-col">
+          <div class="image-wrapper">
+            <img src="assets/pillar-dining.png" alt="Fine Dining Dish" class="pillar-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Wellness Cuisine (Wellness) -->
+      <div id="wellness" class="pillar-row scroll-reveal">
+        <div class="pillar-col pillar-image-col">
+          <div class="image-wrapper">
+            <img src="assets/pillar-cuisine.png" alt="Wellness Cuisine Juice" class="pillar-image">
+          </div>
+        </div>
+        <div class="pillar-col pillar-text-col bg-sage-card">
+          <div class="pillar-content">
+            <div class="pillar-icon text-sage-dark">
+              <!-- Lotus Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c-1.5 3-4.5 4.5-6 6.5C4 12 5 16 8.5 16.5c3.5.5 3.5-3 3.5-3s0 3.5 3.5 3c3.5-.5 4.5-4.5 2.5-7-1.5-2-4.5-3.5-6-6.5Z" />
+                <path d="M12 13.5v7" />
+                <path d="M7 17.5c2 2 3.5 3 5 3s3-1 5-3" />
+              </svg>
+            </div>
+            <h2 class="pillar-title text-sage-dark">WELLNESS CUISINE</h2>
+            <p class="pillar-desc text-sage-dark">Nourishing dishes crafted to fuel your body and elevate your wellness.</p>
+            <button class="btn btn-link btn-link-dark btn-book-trigger" data-service="cuisine">VIEW WELLNESS MENU</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 4: Reboot Private Spa (Spa) -->
+      <div id="spa" class="pillar-row scroll-reveal">
+        <div class="pillar-col pillar-image-col">
+          <div class="image-wrapper">
+            <img src="assets/pillar-spa.png" alt="Reboot Private Spa Setup" class="pillar-image">
+          </div>
+        </div>
+        <div class="pillar-col pillar-text-col bg-brown-card">
+          <div class="pillar-content">
+            <div class="pillar-icon text-brown-light">
+              <!-- Leaf Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22C12 22 22 12 22 2c0 3-1.5 6-3.5 8C16.5 12 13.5 13 11 13c-2.5 0-5 .5-7 2.5C2.5 17 2 19 2 22Z" />
+                <path d="M2 22l6-6M12 13v7" />
+              </svg>
+            </div>
+            <h2 class="pillar-title text-brown-light">REBOOT PRIVATE SPA</h2>
+            <p class="pillar-desc text-brown-light">Relax, rejuvenate and restore in your own private sanctuary.</p>
+            <button class="btn btn-link btn-link-light btn-book-trigger" data-service="spa">EXPLORE SPA</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Experience / Gallery Carousel Section -->
+    <section id="gallery" class="gallery-section scroll-reveal">
+      <div class="gallery-header">
+        <span class="gallery-subtitle">EXPERIENCE BLACK OAK</span>
+        <h2 class="gallery-title">WHERE EVERY DETAIL IS CURATED FOR YOU</h2>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="carousel-container">
+        <button class="carousel-nav-btn prev-btn" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track">
+            <div class="carousel-slide active" data-index="0">
+              <img src="assets/gallery-1.png" alt="Luxury Dining Table Setting" class="gallery-img">
+            </div>
+            <div class="carousel-slide" data-index="1">
+              <img src="assets/gallery-2.png" alt="Modern Dark Kitchen Island" class="gallery-img">
+            </div>
+            <div class="carousel-slide" data-index="2">
+              <img src="assets/gallery-3.png" alt="Rejuvenating Massage Therapy" class="gallery-img">
+            </div>
+            <div class="carousel-slide" data-index="3">
+              <img src="assets/gallery-4.png" alt="Elegant Restaurant Seating" class="gallery-img">
+            </div>
+            <div class="carousel-slide" data-index="4">
+              <img src="assets/gallery-5.png" alt="Luxury Bathroom with Freestanding Tub" class="gallery-img">
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-nav-btn next-btn" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Carousel Dots Indicator -->
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+      </div>
+
+      <div class="gallery-actions">
+        <button class="btn btn-outline" id="view-gallery-btn">VIEW GALLERY</button>
+      </div>
+    </section>
+
+    <!-- Ready / CTA Banner Section -->
+    <section class="cta-section scroll-reveal">
+      <div class="cta-container">
+        <h2 class="cta-title">READY TO EXPERIENCE BLACK OAK?</h2>
+        <p class="cta-desc">Book your stay or reserve a table today.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-outline btn-inquiry-trigger" data-service="dine">RESERVE A TABLE</button>
+          <button class="btn btn-accent btn-book-trigger" data-service="stay">BOOK YOUR STAY</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Booking/Inquiry Modal Drawer -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Booking Modal">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <h3 class="modal-title">INQUIRE & BOOK</h3>
+        <p class="modal-subtitle">Experience bespoke luxury tailored to your taste.</p>
+      </div>
+      <form class="booking-form" id="booking-form">
+        <div class="form-group">
+          <label for="form-name">FULL NAME</label>
+          <input type="text" id="form-name" required placeholder="John Doe">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-email">EMAIL ADDRESS</label>
+            <input type="email" id="form-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="form-phone">PHONE NUMBER</label>
+            <input type="tel" id="form-phone" required placeholder="+234 800 123 4567">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-service">SERVICE OF INTEREST</label>
+            <select id="form-service" required>
+              <option value="stay">Luxury Apartments (Stay)</option>
+              <option value="dine">Fine Dining (Dine)</option>
+              <option value="cuisine">Wellness Cuisine</option>
+              <option value="spa">Reboot Private Spa</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-date">PREFERRED DATE</label>
+            <input type="date" id="form-date" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-message">SPECIAL REQUESTS / NOTES</label>
+          <textarea id="form-message" rows="4" placeholder="Tell us about your preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent btn-submit-form">SEND INQUIRY</button>
+      </form>
+      <div class="form-success-message" id="form-success">
+        <svg viewBox="0 0 24 24" width="48" height="48" stroke="#d4af37" stroke-width="1.5" fill="none">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <h4>INQUIRY RECEIVED</h4>
+        <p>Thank you for contacting Black Oak. A member of our concierge team will reach out to you shortly to finalize your reservation.</p>
+        <button class="btn btn-outline modal-close-success" type="button">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for Gallery Images -->
+  <div class="lightbox-overlay" id="lightbox-modal">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+      <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="1.5" fill="none">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="lightbox-nav prev" id="lightbox-prev-btn" aria-label="Previous Image">
+      <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.5" fill="none">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="Gallery Lightbox Preview" class="lightbox-img" id="lightbox-img">
+    </div>
+    <button class="lightbox-nav next" id="lightbox-next-btn" aria-label="Next Image">
+      <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.5" fill="none">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <!-- Tree SVG Logo -->
+          <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 15 C45 25 35 25 30 35 C25 45 35 48 30 58 C25 68 35 70 38 80 L62 80 C65 70 75 68 70 58 C65 48 75 45 70 35 C65 25 55 25 50 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-miterlimit="10"/>
+            <path d="M50 30 L50 80" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M50 45 C45 42 40 42 37 45" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 55 C42 50 36 55 33 60" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 40 C55 37 60 37 63 40" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 50 C58 45 64 50 67 55" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 63 C44 60 39 63 36 67" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M50 67 C56 64 61 67 64 71" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">BLACK OAK</span>
+            <span class="logo-subtitle">BY CRUSHBERRY</span>
+            <span class="logo-tag">FINE DINING • WELLNESS CUISINE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Location -->
+      <div class="footer-col">
+        <h4 class="footer-heading">LOCATION</h4>
+        <p class="footer-info">123 Oakwood Drive,<br>Lagos, Nigeria</p>
+      </div>
+
+      <!-- Column 3: Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading">CONTACT</h4>
+        <p class="footer-info">
+          <a href="tel:+2348001234567" class="footer-link">+234 800 123 4567</a><br>
+          <a href="mailto:hello@blackoak.ng" class="footer-link">hello@blackoak.ng</a>
+        </p>
+      </div>
+
+      <!-- Column 4: Hours & Follow -->
+      <div class="footer-col">
+        <h4 class="footer-heading">HOURS</h4>
+        <p class="footer-info">Mon – Sun<br>7:00 AM – 11:00 PM</p>
+        
+        <h4 class="footer-heading follow-heading">FOLLOW US</h4>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="TikTok">
+            <!-- Custom TikTok SVG -->
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="copyright">&copy; 2026 Black Oak by Crushberry. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#" class="legal-link">Privacy Policy</a>
+          <a href="#" class="legal-link">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js?v=1.1"></script>
+</body>
+</html>

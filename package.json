@@ -1,0 +1,12 @@
+{
+  "name": "black-oak-residence-website",
+  "version": "1.0.0",
+  "description": "Black Oak by Crushberry website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 8080 -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
