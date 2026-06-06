@@ -4,7 +4,7 @@
   "description": "Black Oak by Crushberry website",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y http-server -p 8080 -c-1"
+    "dev": "npx -y http-server -p 8085 -c-1"
   },
   "keywords": [],
   "author": "",
